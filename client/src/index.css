@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,5 +9,23 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
     color-scheme: dark;
-    background-color: #05081c;
   }
+html{
+    background-color: black;
+
+}
+.bg-white-gray{
+  background: linear-gradient(to bottom, #767675,white );
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   background-clip: text;
+   color: transparent; 
+}
+.color-textShadow{
+  text-shadow: black 1px 1px 10px ;
+}
+#hero-threejs{
+  /* background: radial-gradient(ellipse at top, #1b2735 0%,#090a0f 100%); */
+  /* background: radial-gradient(ellipse at top, #16202c 10%,#0000 100%); */
+  background: radial-gradient(ellipse at top, #162b44 10%,#0000 100%);
+}
