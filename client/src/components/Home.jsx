@@ -97,6 +97,9 @@ function Home() {
               Designing the <span className="text-yellow-400">Web</span>, One
               Pixel at a Time
             </h1> */}
+
+              
+
           </div>
         </div>
       </div>
