@@ -24,7 +24,7 @@ function Navbar() {
   return(
       <div className="h-10vh flex justify-between z-50 text-white/25 lg:py-5 px-15 py-4 flex-1">
         <div className="flex items-center flex-1 px-10">
-          <span className="w-[37vh]"><img src="./public/logo.avif" alt="" /></span>
+          <span className="w-[17vh] sm:w-[37vh]"><img src="./public/logo.avif" alt="" /></span>
         </div>
         <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
           <ul className="flex gap-8 mr-16 text-[18px]">
@@ -37,7 +37,7 @@ function Navbar() {
         <div>
           {click && content}
         </div>
-        <button className="b;ock sm:hidden transition " onClick={handleClick}>
+        <button className="m-4 block sm:hidden transition " onClick={handleClick}>
           {click ? <FaTimes/> : <CiMenuFries/>}
           </button>
       </div>
