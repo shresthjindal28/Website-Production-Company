@@ -27,3 +27,7 @@ html{
   background: radial-gradient(ellipse at top, #162b44 10%,#0000 60%);
 
 }
+.bg-tansparent{
+  /* background:; */
+  backdrop-filter: blur(10px); 
+}
