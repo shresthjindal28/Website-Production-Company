@@ -1,7 +1,7 @@
 import React from "react";
 
 function About() {
-  return <div>hello</div>;
+  return <div className="h-[90vh] w-full bg-black"></div>;
 }
 
 export default About;
