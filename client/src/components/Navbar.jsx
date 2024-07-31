@@ -37,19 +37,19 @@ function Navbar() {
           <img src="./public/logo.avif" alt="" />
         </span>
       </div>
-      <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal hidden">
-        <ul className="flex gap-8 mr-16 text-[18px]">
-          <li className=" hover:text-white/100 transition  border-slate-900 cursor-pointer ">
-            HOME
+      <div className="lg:flex md:flex lg: flex-1 items-center justify-end hidden ">
+        <ul className="flex gap-12 mr-16 text-[20px]">
+          <li className=" hover:text-white/100 transition  text-gray-600 cursor-pointer ">
+            Home
           </li>
-          <li className=" hover:text-white/100 transition  border-slate-900 cursor-pointer ">
-            WORK
+          <li className=" hover:text-white/100 transition  text-gray-600 cursor-pointer ">
+            Work
           </li>
-          <li className=" hover:text-white/100 transition  border-slate-900 cursor-pointer ">
-            ABOUT
+          <li className=" hover:text-white/100 transition  text-gray-600 cursor-pointer ">
+            About
           </li>
-          <li className=" hover:text-white/100 transition  border-slate-900 cursor-pointer ">
-            CONTACT
+          <li className=" hover:text-white/100 transition  text-gray-600 cursor-pointer ">
+            Contact
           </li>
         </ul>
       </div>

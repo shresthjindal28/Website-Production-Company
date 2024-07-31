@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import * as Three from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
-
 function Home() {
   useEffect(() => {
     const div3d = document.getElementById("hero-threejs");
@@ -23,7 +22,7 @@ function Home() {
       div3d.clientWidth / div3d.clientHeight,
       // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
       1,
-      1000
+      1500
     );
 
     camera.position.set(0, 0, 500);
@@ -60,8 +59,8 @@ function Home() {
       scene.add(sphere4);
       scene.add(sphere5);
       sphere1.position.set(50, -100, +10);
-      sphere2.position.set(290, 160, -230);
-      sphere3.position.set(-450, 50, -200);
+      sphere2.position.set(290, 160, -130);
+      sphere3.position.set(-450, 50, -100);
       sphere4.position.set(100, -200, +400);
       sphere5.position.set(-200, 200, +400);
     } else {
@@ -71,30 +70,27 @@ function Home() {
       sphere.position.set(0, -30, 0);
     }
 
+    //mouse movement
+    let mouseX = 0;
+    let mouseY = 0;
 
-        //mouse movement
-        let mouseX = 0;
-        let mouseY = 0;
+    let windowHalfX = window.innerWidth / 2;
+    let windowHalfY = window.innerHeight / 2;
 
-        let windowHalfX = window.innerWidth / 2;
-			  let windowHalfY = window.innerHeight / 2;
-
-        document.addEventListener( 'mousemove', onDocumentMouseMove );
-        function onDocumentMouseMove( event ) {
-          mouseX = ( event.clientX - windowHalfX ) ;
-          mouseY = ( event.clientY - windowHalfY ) ;
-        }
-
-
+    document.addEventListener("mousemove", onDocumentMouseMove);
+    function onDocumentMouseMove(event) {
+      mouseX = event.clientX - windowHalfX;
+      mouseY = event.clientY - windowHalfY;
+    }
 
     const animate = () => {
-        camera.position.x += ( mouseX - camera.position.x ) * .05;
-				camera.position.y += ( - mouseY - camera.position.y ) * .05;
-        controls.update();
-        renderer.render(scene, camera);
+      camera.position.x += (mouseX - camera.position.x) * 0.05;
+      camera.position.y += (-mouseY - camera.position.y) * 0.05;
+      controls.update();
+      renderer.render(scene, camera);
     };
     renderer.setAnimationLoop(animate);
-    
+
     // resize the animation based on window size
     const handleResize = () => {
       const width = div3d.clientWidth;
@@ -115,10 +111,10 @@ function Home() {
   }, []);
 
   return (
-    <div className="block">
+    <div className="block h-screen">
       <div
         id="hero-threejs"
-        className="w-full h-full xl:h-90vh absolute top-0 left-0 -z-10 overflow-hidden "
+        className="w-full h-full absolute top-0 left-0 -z-10 overflow-hidden "
       >
         <div className="absolute w-11/12 top-[20%] left-1/2 transform -translate-x-1/2  xl:top-1/4 xl:w-[70%] ">
           <div className="flex flex-col justify-center w-full  items-center ">
@@ -134,7 +130,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="h-screen"></div>
     </div>
   );
 }

@@ -11,8 +11,7 @@
     color-scheme: dark;
   }
 html{
-    background-color: black;
-
+  background: radial-gradient(ellipse at top, #162b44 10%,#0000 60%);
 }
 .bg-white-gray{
   background: linear-gradient(to bottom, #767675,white );
@@ -24,8 +23,7 @@ html{
 .color-textShadow{
   text-shadow: black 1px 1px 10px ;
 }
-#hero-threejs{
-  /* background: radial-gradient(ellipse at top, #1b2735 0%,#090a0f 100%); */
-  /* background: radial-gradient(ellipse at top, #16202c 10%,#0000 100%); */
-  background: radial-gradient(ellipse at top, #162b44 10%,#0000 100%);
+.bg-rays{
+  background: radial-gradient(ellipse at top, #162b44 10%,#0000 60%);
+
 }
