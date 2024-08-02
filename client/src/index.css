@@ -9,10 +9,18 @@
     font-family: Gumela;
     scroll-behavior: smooth;
     color-scheme: dark;
+    user-select: none;
   }
 html{
-  background: radial-gradient(ellipse at top, #162b44 10%,#0000 60%);
+  /* background-color: #162b44; */
+  background-color: #05081c;
 }
+
+.bg-radient{
+background: radial-gradient(ellipse at top, #162b44 10%,#0000 60%);
+
+}
+
 .bg-white-gray{
   background: linear-gradient(to bottom, #767675,white );
    -webkit-background-clip: text;

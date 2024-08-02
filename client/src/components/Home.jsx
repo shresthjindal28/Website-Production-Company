@@ -114,7 +114,7 @@ function Home() {
     <div className="block h-screen">
       <div
         id="hero-threejs"
-        className="w-full h-full absolute top-0 left-0 -z-10 overflow-hidden "
+        className="bg-radient w-full h-full absolute top-0 left-0 -z-10 overflow-hidden "
       >
         <div className="absolute w-11/12 top-[20%] left-1/2 transform -translate-x-1/2  xl:top-1/4 xl:w-[70%] ">
           <div className="flex flex-col justify-center w-full  items-center ">

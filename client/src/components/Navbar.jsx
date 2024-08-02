@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
+import { useEffect } from "react";
 // import { CiMenuFries } from "react-icons/ci";
 
 function Navbar() {
   const [click, setClick] = useState(false);
+
+  let aboutEl = null;
+  useEffect(() => {
+    aboutEl = document.body.querySelector("#about-section");
+    // console.log(aboutEl);
+  }, []);
+
   const handleClick = () => {
     setClick(!click);
   };
-
   const content = (
     <>
       <div className="h-full lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-800 transition">
@@ -45,7 +52,14 @@ function Navbar() {
           <li className=" hover:text-white/100 transition  text-gray-600 cursor-pointer ">
             Work
           </li>
-          <li className=" hover:text-white/100 transition  text-gray-600 cursor-pointer ">
+          <li
+            className=" hover:text-white/100 transition  text-gray-600 cursor-pointer "
+            onClick={() => {
+              aboutEl?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
             About
           </li>
           <li className=" hover:text-white/100 transition  text-gray-600 cursor-pointer ">
