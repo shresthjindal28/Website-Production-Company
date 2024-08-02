@@ -1,10 +1,12 @@
 import * as React from "react";
-const AboutSVGComponent = (props) => (
+const AboutSVGComponent = ({ w, h }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={600}
-    height={600}
+    // width={600}
+    // height={600}
+    width={w}
+    height={h}
     x="0px"
     y="0px"
     viewBox="0 0 500 500"
@@ -12,7 +14,7 @@ const AboutSVGComponent = (props) => (
       enableBackground: "new 0 0 500 500",
     }}
     xmlSpace="preserve"
-    {...props}
+    // {...props}
   >
     <g id="Floor">
       <ellipse
@@ -2553,4 +2555,3 @@ const AboutSVGComponent = (props) => (
   </svg>
 );
 export default AboutSVGComponent;
-
